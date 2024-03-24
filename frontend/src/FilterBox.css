@@ -1,0 +1,53 @@
+.select-container {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  color: black;
+  background-color: #c8cbd2;
+  opacity: 1;
+}
+
+.select-menu {
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-option {
+  padding: 8px 12px;
+  color: black; /* Set text color */
+}
+
+.select-value {
+  background-color: #555;
+  color: black; /* Set text color */
+}
+
+.multi-value-container {
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #222;
+}
+
+.multi-value-label {
+  color: black; /* Set text color */
+}
+
+.clear-indicator,
+.dropdown-indicator {
+  color: #fff;
+}
+
+.select-option:hover {
+  background-color: #444;
+}
+
+.select-option--is-selected {
+  background-color: #555;
+}
+
+h3 {
+  margin: 0 1rem;
+  color: #232D4B;
+}

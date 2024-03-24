@@ -1,0 +1,66 @@
+.navbar {
+  background-color: #333;
+  color: #e57200;
+  padding: 0.7rem 5%;
+  height: 4rem;
+  font-family: "Trebuchet MS";
+}
+
+.navbar-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin-left: auto;
+  margin-right: 5%;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+.login-btn {
+  margin-left: 0;
+}
+
+.signInButton {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-image: none;
+}
+
+.signInButton:hover {
+  background-color: #fff;
+  color: #333;
+}

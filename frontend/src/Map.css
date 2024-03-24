@@ -1,0 +1,8 @@
+.map-container {
+  height: calc(100vh - 5.4rem); /* Use 100% of the viewport height */
+  width: 100%; /* Use 100% of the available width */
+}
+
+.map-container-container {
+  position: relative;
+}
