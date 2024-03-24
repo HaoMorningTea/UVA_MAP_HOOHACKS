@@ -45,12 +45,10 @@ const Map = ({ markerList }) => {
         })
         map.addListener("zoom_changed", function () {
           // const zoomLevel = map.getZoom()
-          const image_size = new google.maps.Size(20,20)
-          const newIconSize = image_size // Adjust the size based on the zoom level
+          // const newIconSize = zoomLevel // Adjust the size based on the zoom level
           baseMarker.setIcon({
             url: "http://127.0.0.1:8000" + marker.icon, // todo: replace with actual url of symbol
             scaledSize: new google.maps.Size(newIconSize, newIconSize),
-            center: marker.location
           })
         })
         const InfoWindow = new window.google.maps.InfoWindow({
