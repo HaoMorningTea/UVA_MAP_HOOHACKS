@@ -36,8 +36,9 @@ To set up the project locally, follow these simple steps:
     cd env
     ```
     ```bash
-    source bin/activate
-    Scripts\activate (windows)
+    <!-- source bin/activate (for mac) -->
+    Scripts\activate
+    cd ../UVA_MAP/backend/djangobackend
     ```
     Step 3: Install below packages by using pip
     ```bash
