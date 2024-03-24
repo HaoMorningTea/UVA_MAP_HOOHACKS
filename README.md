@@ -15,6 +15,10 @@ To set up the project locally, follow these simple steps:
 
 2. **Start the Website:**
     ```bash
+    npm install --force
+    ```
+
+    ```bash
     npm run dev
     ```
    This will initiate the development server, making the application accessible at `http://127.0.0.1:5173/` by default.
@@ -47,6 +51,9 @@ To set up the project locally, follow these simple steps:
     ```
     ```bash
     python -m pip install Pillow
+    ```
+    ```bash
+    python -m pip install django-model-utils
     ```
     Step 4: Run server
     ```bash
