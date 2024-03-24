@@ -27,7 +27,7 @@ const Map = ({ markerList }) => {
       })
 
       for (const marker of markerList) {
-        // console.log("marker", marker)
+        console.log("marker", marker)
         const baseSettings = {
           url: "http://127.0.0.1:8000" + marker.icon, // todo: change this (Relative path to the image)
           scaledSize: new window.google.maps.Size(10, 10), // Size of the icon
