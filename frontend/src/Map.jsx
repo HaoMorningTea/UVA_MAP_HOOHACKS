@@ -24,9 +24,41 @@ const Map = ({ markerList }) => {
 
       let map = new Map(document.getElementById("map"), {
         center: { lat: 38.0334654, lng: -78.5077724 },
-        zoom: 17,
+        zoom: 16.2,
         mapId: "7383ea4d2ef1f2b",
       })
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+
+            const pokemonSettings = {
+              url: "../public/pokemon.png", // todo: change this (Relative path to the image)
+              scaledSize: new window.google.maps.Size(20, 20), // Size of the icon
+              origin: new window.google.maps.Point(0, 0), // Position of the icon's image within the sprite
+            }
+
+            new google.maps.Marker({
+              position: pos,
+              map,
+              title: "Your Location",
+              animation: google.maps.Animation.DROP,
+              icon: pokemonSettings,
+            });
+
+            map.setCenter(pos);
+          },
+          () => {
+            handleLocationError(true, map.getCenter());
+          }
+        );
+      } else {
+        handleLocationError(false, map.getCenter());
+      }
 
       for (const marker of markerList) {
         console.log("marker", marker)
