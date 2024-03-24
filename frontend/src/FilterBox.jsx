@@ -21,6 +21,7 @@ function FilterBox({ options, onChange }) {
       <Select
         options={selectOptions}
         isMulti
+        defaultValue={{ value: "All", label: "All" }} // Set default value to "All"
         onChange={handleSelectChange}
         className='select-menu'
         classNamePrefix='select'
