@@ -36,7 +36,7 @@ const Map = ({ markerList }) => {
         ) {
           const baseSettings = {
             url: "http://127.0.0.1:8000" + marker.icon, // todo: change this (Relative path to the image)
-            scaledSize: new window.google.maps.Size(10, 10), // Size of the icon
+            scaledSize: new window.google.maps.Size(20, 20), // Size of the icon
             origin: new window.google.maps.Point(0, 0), // Position of the icon's image within the sprite
           }
           const baseMarker = new google.maps.Marker({
@@ -50,8 +50,8 @@ const Map = ({ markerList }) => {
             animation: google.maps.Animation.DROP,
           })
           map.addListener("zoom_changed", function () {
-            const zoomLevel = map.getZoom()
-            const newIconSize = zoomLevel // Adjust the size based on the zoom level
+            // const zoomLevel = map.getZoom()
+            // const newIconSize = zoomLevel // Adjust the size based on the zoom level
             baseMarker.setIcon({
               url: "http://127.0.0.1:8000" + marker.icon, // todo: replace with actual url of symbol
               scaledSize: new google.maps.Size(newIconSize, newIconSize),
