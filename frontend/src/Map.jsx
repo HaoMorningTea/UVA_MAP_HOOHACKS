@@ -37,7 +37,7 @@ const Map = ({ markerList }) => {
             };
 
             const pokemonSettings = {
-              url: "../public/pokemon.png", // todo: change this (Relative path to the image)
+              url: "../pokemon.png", // todo: change this (Relative path to the image)
               scaledSize: new window.google.maps.Size(20, 20), // Size of the icon
               origin: new window.google.maps.Point(0, 0), // Position of the icon's image within the sprite
             }
